@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Datenschutzhinweise zur Browser-Erweiterung GreenMedical Apotheken-Preisvergleich">
+<title>Datenschutz – GreenMedical Apotheken-Preisvergleich</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:#1d2a23;background:#f7f9f7}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 18px 64px}
+main{max-width:760px;margin:auto;padding:36px 42px;background:#fff;border:1px solid #dce5df;border-radius:10px}
+h1{font-size:1.8rem;line-height:1.2;margin:0 0 10px;color:#00572f}
+h2{font-size:1.15rem;line-height:1.3;margin:32px 0 8px;color:#00572f}
+p{margin:0 0 16px}a{color:#00572f;text-underline-offset:2px}code{background:#eff7f1;padding:1px 4px;border-radius:3px;font-size:.9em}
+@media(max-width:600px){body{padding:0}main{padding:26px 20px;border:0;border-radius:0}}
+</style>
+</head>
+<body><main><h1>Datenschutz: GreenMedical Apotheken-Preisvergleich</h1>
+<p>Stand: 9. Oktober 2026</p>
+<p>Diese Browser-Erweiterung vergleicht Angebote auf <code>greenmedical.health</code>. Sie wird von <a href="https://github.com/zCrxticxl">zCrxticxl</a> herausgegeben. Fragen zum Datenschutz und Support kannst du an <a href="https://x.com/zCrxticxl">@zCrxticxl auf X</a> richten. Die Erweiterung ist ein unabhängiges Projekt.</p>
+<h2>Welche Daten verarbeitet werden</h2>
+<p>Wenn du einen Vergleich startest, liest die Erweiterung die von GreenMedical angezeigten Apotheken, Produkte, Preise, Lagerbestände und Terpennamen. Sie verarbeitet deinen Suchbegriff, ausgewählte Apotheken und Filter, um die Tabelle zu erstellen. Suchbegriffe und Produktauswahl können Rückschlüsse auf gesundheitliche Interessen zulassen.</p>
+<p>Für parallele Abfragen erzeugt die Erweiterung kurzlebige GreenMedical-Sitzungen. Dazu liest sie die von GreenMedical gesetzte Kennung <code>PHPSESSID</code> für diese neuen Sitzungen und verwendet sie nur für die zugehörigen Scan-Anfragen. Normale Website- und Warenkorb-Anfragen nutzen deine bestehende GreenMedical-Sitzung. Die Erweiterung liest keine Passwörter.</p>
+<p>Wenn du Produkte auswählst und auf <strong>Auswahl in Warenkorb</strong> klickst, sendet die Erweiterung die gewählten Produkte und die Apothekenauswahl an GreenMedical. Bestellung, Rezeptprüfung und Zahlung erfolgen weiterhin auf der Website und werden von der Erweiterung nicht abgeschlossen.</p>
+<h2>Speicherung</h2>
+<p>Ein abgeschlossener Vergleich mit Suchbegriff, Filtern, Angeboten und Abfragezeitpunkt liegt im <code>sessionStorage</code> des aktuellen GreenMedical-Tabs. So bleibt er beim Navigieren im selben Tab erhalten. GreenMedical-Skripte können technisch auf diesen Website-Speicher zugreifen. Ein neuer Scan ersetzt den Eintrag. Schließen des Tabs oder Löschen der Website-Daten entfernt ihn normalerweise; eine wiederhergestellte Tabsitzung kann ihn behalten.</p>
+<p>Scan-Kennung, Tab-ID und kurzlebige Zuordnungsdaten liegen in <code>chrome.storage.session</code>. Temporäre Browser-Regeln mit den zusätzlichen GreenMedical-Sitzungskennungen werden nach dem Scan entfernt. Bei Abbruch räumt die Erweiterung sie beim Schließen des Tabs oder nach einer Frist von fünf Minuten seit der letzten Verlängerung auf.</p>
+<p>Ein CSV-Export wird auf deinen Klick aus der Tabelle erstellt und lokal heruntergeladen.</p>
+<h2>Empfänger und weitere Dienste</h2>
+<p>Die für Vergleich, Produktansicht und Warenkorb nötigen HTTPS-Anfragen gehen an <a href="https://greenmedical.health/de/privacy">GreenMedical</a>. Dort können Suchbegriff, Filter, Apotheken- und Produktauswahl sowie Sitzungsdaten anfallen. Für das GreenMedical-Konto, Rezepte, Warenkorb und Bestellung gilt dessen eigene Datenschutzerklärung.</p>
+<p>Die Erweiterung hat keinen eigenen Server. Sie übermittelt Suchbegriffe, Scanergebnisse und Warenkorbauswahl nicht an den Herausgeber. Sie nutzt keine Analyse- oder Werbedienste und verkauft keine Daten. Informationen aus Browser-Schnittstellen werden ausschließlich für die beschriebenen Funktionen verwendet; ihre Nutzung folgt den Limited-Use-Vorgaben des Chrome Web Store.</p>
+<p>Links in der Terpen-Legende öffnen GreenMedical oder PubMed erst nach deinem Klick in einem neuen Tab. Für diese Seiten gelten deren eigene Datenschutzregeln.</p>
+<h2>Deine Möglichkeiten</h2>
+<p>Du kannst einen neuen Scan starten, den Tab schließen, GreenMedical-Website-Daten im Browser löschen oder die Erweiterung entfernen. Fragen zur Datenverarbeitung durch die Erweiterung kannst du an den oben genannten Kontakt richten. Für Daten in deinem GreenMedical-Konto ist GreenMedical der richtige Ansprechpartner.</p>
+</main></body>
+</html>
